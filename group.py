@@ -8,5 +8,6 @@ my_group = {
     "John": {"age": 27, "job": "Writer", "connection": {"partner": "Jill"}},
     "Nash": {"age": 34, "job": "Chef", "connection": {"cousin": "John", "landlord": "Zalika"}},
     "Lila": {"age":"" , "job": "", "connection": ""},
+    "Nelly": {"age":22, "job": "Student", "connection":""},
     "Zara": {"age": 22, "job": "Student", "connection": {"friend": "Lila"}}
     }
