@@ -25,7 +25,7 @@ json_string = json.dumps(my_group, indent=4, sort_keys=True)
 
 # Write .json file
 with open('my_file.json', 'w') as f:
-    json.dump(my_group, f)
+    json.dump(my_group, f, indent=4, sort_keys=True)
 
 # Read .json file
 with open('my_file.json', 'r') as f:

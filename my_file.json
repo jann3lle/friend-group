@@ -1,1 +1,49 @@
-{"Jill": {"age": 26, "job": "Biologist", "connection": {"friend": "Zalika", "partner": "John"}}, "Zalika": {"age": 28, "job": "Artist", "connection": {"friend": "Jill"}}, "John": {"age": 27, "job": "Writer", "connection": {"partner": "Jill"}}, "Nash": {"age": 34, "job": "Chef", "connection": {"cousin": "John", "landlord": "Zalika"}}, "Lila": {"age": "", "job": "", "connection": ""}, "Nelly": {"age": 22, "job": "Student", "connection": ""}, "Zara": {"age": 22, "job": "Student", "connection": {"friend": "Lila"}}}
+{
+    "Jill": {
+        "age": 26,
+        "connection": {
+            "friend": "Zalika",
+            "partner": "John"
+        },
+        "job": "Biologist"
+    },
+    "John": {
+        "age": 27,
+        "connection": {
+            "partner": "Jill"
+        },
+        "job": "Writer"
+    },
+    "Lila": {
+        "age": "",
+        "connection": "",
+        "job": ""
+    },
+    "Nash": {
+        "age": 34,
+        "connection": {
+            "cousin": "John",
+            "landlord": "Zalika"
+        },
+        "job": "Chef"
+    },
+    "Nelly": {
+        "age": 22,
+        "connection": "",
+        "job": "Student"
+    },
+    "Zalika": {
+        "age": 28,
+        "connection": {
+            "friend": "Jill"
+        },
+        "job": "Artist"
+    },
+    "Zara": {
+        "age": 22,
+        "connection": {
+            "friend": "Lila"
+        },
+        "job": "Student"
+    }
+}
