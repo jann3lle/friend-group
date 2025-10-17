@@ -6,6 +6,41 @@ def main():
     add_person(my_group, "Maya", 30, "Engineer", {"friend": "Jill"})
     print(f"average age:", average_age(my_group))
 
+    # Repo issue 8
+
+    # Max age for people in the group
+    ages = [info["age"] for info in my_group.values() if isinstance(info["age"], (int, float))]
+    print(f"Maximum age of people in the group:", max(ages))
+    
+    # Average number of relations in the group
+    num_relations = [len(info["connection"]) for info in my_group.values() if isinstance(info["connection"], dict)]
+    average_relations = sum(num_relations) / len(num_relations)
+    print(f"Average number of relations among members of the group:", average_relations)
+
+    # Max age of people in the group with at least one relation
+    ages_with_relations = [
+    info["age"]
+    for info in my_group.values()
+    if isinstance(info["connection"], dict)
+    and len(info["connection"]) > 0
+    and isinstance(info["age"], (int, float))
+    ]
+    print(f"Maximum age with at least one relation:", max(ages_with_relations))
+
+    # Maximum age of people in the group with at least one friend (inner inner dictionary)
+    ages_with_friend = [
+    info["age"]
+    for info in my_group.values()
+    if isinstance(info["connection"], dict)
+    and "friend" in info["connection"]
+    and isinstance(info["age"], (int, float))
+    ]
+    print(f"Maximum age with at least 1 friend connection:", max(ages_with_friend))
+
+
+
+
+
 if __name__ == "__main__":
     my_group = {
         "Jill": {
@@ -57,5 +92,7 @@ if __name__ == "__main__":
             return sum(ages) / len(ages)
         else:
             return 0
+        
+    # Repo Issue 8
 
     main()
